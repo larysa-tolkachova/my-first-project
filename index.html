@@ -237,7 +237,7 @@ img {
     line-height: 18px;
     letter-spacing: -0.02em;
     text-align: left;
-     ?????   background: #0C0C0C80;
+     ?????   background: #0C0C0C80 ; /*50%*/
 }
 
 .catalog-button {
@@ -273,23 +273,55 @@ img {
     
 *************
 @media screen and (min-width: 768px) {
+.container {
+    max-width: 375px;
+    height: Hug (1,660px)px;
+    padding: 0px 32px 0px 32px;
+    gap: 40px;
+    }
 
+.catalog-title {
+width: 177px;
+height: 44px;
 
+font-size: 48px;
+font-weight: 600;
+line-height: 44px;
+}
 
+.catalog-menu {
+    gap: 32px 16px;
+}
 
 .catalog-menu-list {
     flex-basis: calc((100% - 16px)/2);
 }
 
+.list-opys-name {
+    font-size: 20px;
+}
 
+.catalog-button {
+    display: none;
+}
 
 }
 
+
+
 @media screen and (min-width: 1280px)
+.container {
+    max-width: 375px;
+    height: Hug (1,660px)px;
+    padding: 0px 20px 0px 20px;
+    gap: 24px;
+
+    }
 
 
-
-
+.catalog-menu {
+    gap: 32px 23px;
+}
 
 .catalog-menu-list {
     flex-basis: calc((100% - 46px)/3);
